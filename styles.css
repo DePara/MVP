@@ -17,11 +17,57 @@ body {
     overflow-y: scroll;
 }
 
+.btn-start {
+  padding: 20px;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* seta tamanho */
+.wrapper {
+  display: table; 
+  height: 90%; 
+  width: 100%; 
+  position: relative; 
+  overflow: hidden;
+  background-color: blue;
+}
+
+/* seta posição */
+.positioner {
+  #position: relative; 
+  #top: 50%;
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.greenBorder {
+  border: 1px solid green;
+}
+
+.ft{
+  padding: 20px;
+  background-color: lime;
+  width: 100%;
+  position: relative;
+}
+
+.ft-col{
+}
+
+
 /* NAV BAR STUFF */
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .navbar-default {
-  background-color: #000000;
+  background-color: #800080;
   border-color: #000;
+  border-radius: 0px;
   min-height:40px !important
 }
 .navbar-default .navbar-brand {
