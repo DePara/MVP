@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<title>DePara</title>
 
-	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
-	<script src="jquery-1.12.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<script src="js/jquery-1.12.1.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="bootstrap-slider.min.css"/>
-	<script src="bootstrap-slider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>	
+	<script src="js/functions.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="styles.css"/>	
-	<script src="functions.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css"/>
+	<script src="js/bootstrap-slider.min.js"></script>
 
 </head>
 
@@ -31,43 +31,33 @@
 
   	<div class="wrapper">
   		<div class="positioner">
-		    <div class="box-bg">
-		    	<div class="box-content">
-					<!--
-		    		<div class="form-group">
-					  <label for="idade">Idade:</label>
-					  <input type="text" class="form-control" id="idade">
+  			<div class="row">
+  				<div class="col-md-3"></div>
+			    <div class="col-md-6 box-bg">
+			    	<div class="box-content">
+						<h4> Idade </h4>
+						<input type="text" class="form-control" id="idade">
+						<br>
+
+						<h4> Preço </h4>
+						<br> 
+						<b>R$ 0</b>&nbsp;&nbsp;&nbsp;<input id="preco" type="text" class="span2" value="" data-slider-min="0" data-slider-max="500" data-slider-step="10" data-slider-value="[0,500]"/> &nbsp;&nbsp;<b>R$ 500</b>
+
+			    		<br><br>
+						<h4> Sexo </h4>
+						<form id="radioForm">
+							<div class="radio">
+							  <label><input id="masc" type="radio" name="sexo" value="M">Masculino</label>
+							</div>
+							<div class="radio">
+							  <label><input id="fem" type="radio" name="sexo" value="F">Feminino</label>
+							</div>
+						</form>
 					</div>
-					-->
-
-					<h4> Idade </h4>
-					<input type="text" class="form-control" id="idade">
-					<br>
-
-					<h4> Preço </h4>
-					<br> 
-					<b>R$ 0</b>&nbsp;&nbsp;&nbsp;<input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="500" data-slider-step="10" data-slider-value="[0,200]"/> &nbsp;&nbsp;<b>R$ 500</b>
-
-		    		<!--<div class="dropdown">
-					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sexo
-					  <span class="caret"></span></button>
-					  <ul class="dropdown-menu">
-					    <li><a href="#">Masculino</a></li>
-					    <li><a href="#">Feminino</a></li>
-					  </ul>
-					</div> -->
-					<br><br>
-					<h4> Sexo </h4>
-					<div class="radio">
-					  <label><input id="masc" type="radio" name="optradio">Masculino</label>
-					</div>
-					<div class="radio">
-					  <label><input id="fem" type="radio" name="optradio">Feminino</label>
-					</div>
-
-				</div>
-				<button type="button" class="btn btn-default btn-next">Continuar</button>	
-		    </div>		    
+					<button id="btn-next-1" type="button" class="btn btn-default btn-next">Continuar</button>	
+			    </div>
+  				<div class="col-md-3"></div>		
+			</div>    
 	    </div>
   	</div>
 

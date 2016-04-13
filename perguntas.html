@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html>
+
+<html lang="pt">
 <head>
+	<meta charset="utf-8">
 	<title>DePara</title>
 
-	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
-	<script src="jquery-1.12.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<script src="js/jquery-1.12.1.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="styles.css"/>	
-	<script src="functions.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>	
+	<script src="js/functions.js"></script>
 
 </head>
 
 <body>
+
+	<!-- NAV BAR -->
 
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
@@ -21,15 +24,72 @@
 	  </div>
 	</nav>
 
+	<!-- CONTEUDO -->
 
+  	<div class="wrapper">
+  		<div class="positioner">
+  			<div class="row">
+  				<div class="col-md-3"></div>
+			    <div class="col-md-6 box-bg">
+			    	<div class="box-content">
+						<h4> Como você vê essa Mãe? </h4>
+						<div class="form-group">
+						  <select class="form-control" id="p1">
+						    <option>Lendo</option>
+						    <option>Fazendo esporte</option>
+						    <option>Cozinhando</option>
+						    <option>Assistindo um filme</option>
+						    <option>Na balada</option>
+						  </select>
+						</div>
+						<br>
 
+						<h4> O que você acha dessa Mami Poderosa? </h4>
+						<div class="form-group">
+						  <select class="form-control" id="p2">
+						    <option>Afetuosa</option>
+						    <option>Extrovertida</option>
+						    <option>Intelectual</option>
+						    <option>Criativa</option>
+						    <option>Reclamona</option>
+						  </select>
+						</div>
+						<br>
 
-	<h1> </h1>
-	<div class="row">
-		<div class="col-md-12" align="center">
-			<img id="bigImage"/> 
+						<h4> Qual o ambiente mais combina com essa Rainha? </h4>
+						<div class="form-group">
+						  <select class="form-control" id="p3">
+						    <option>Praia</option>
+						    <option>Cidade</option>
+						    <option>Campo</option>
+						    <option>Serra</option>
+						    <option>Deserto</option>
+						  </select>
+						</div>
+						<br>
+					</div>
+					<button id="btn-next-2" type="button" class="btn btn-default btn-next">Continuar</button>	
+			    </div>
+  				<div class="col-md-3"></div>		
+			</div>    
+	    </div>
+  	</div>
+
+  	<!-- FOOTER -->
+	
+	<div class="ft">
+		<div class="row">
+			<div class="ft-col col-md-4">
+				Rooter
+			</div>
+			<div class="ft-col col-md-4">
+				Cooker
+			</div>
+			<div class="ft-col col-md-4">
+				Potter
+			</div>
 		</div>
-	</div>
+	</div>		
 
 </body>
 
