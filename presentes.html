@@ -5,10 +5,18 @@
 	<title>DePara</title>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/jquery-1.12.1.min.js"></script>	
+
+	<script src="js/produtos.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>	
-	<script src="js/functions.js"></script>
+	<script src="js/functions2.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css"/>
+	<script src="js/bootstrap-slider.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="sweetalert2/dist/sweetalert2.min.css">
+	<script src="sweetalert2/dist/sweetalert2.min.js"></script>
 
 </head>
 
@@ -32,16 +40,22 @@
 			    <div class="col-md-8 box-bg">
 			    	<div class="box-content row">
 						<h1> Achoooou! </h1>
-						<div class="col-md-4 produto"> Cras fermentum sem sem, in ornare nisl auctor sit amet. Integer nec sapien libero. Integer erat justo, rhoncus vel metus quis, ultricies dapibus mi. 
-						</div>
-						<div class="col-md-4 produto">Curabitur venenatis mi sed dolor mattis pharetra. Nunc sed magna orci. Integer ut ornare dolor, in viverra orci. Quisque lectus nibh, condimentum eget euismod ac, dictum vitae ex. 
-						</div>
-						<div class="row">
-							<div class="col-md-2"></div>
-							<div class="col-md4 produto">Morbi vestibulum laoreet volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. ;</div>
-							<div class="col-md-2"></div>
-						</div>
-
+						<table class="produtos">
+							<tr>
+								<td class="produto p1"> <img id="img_p1"> </td>
+								<td class="produto p2"> <img id="img_p2"> </td>
+							</tr>
+							<tr>
+								<td class="produto p1"> <a id="lbl_p1"></a></td>
+								<td class="produto p2"> <a id="lbl_p2"></a>  </td>
+							</tr>
+							<tr>
+								<td class="produto p3" colspan="2"> <img id="img_p3"> </a></td>
+							</tr>
+							<tr>								
+								<td class="produto p3" colspan="2"> <a id="lbl_p3"></a></td>
+							</tr>
+						</table>
 					</div>	
 			    </div>
   				<div class="col-md-2"></div>

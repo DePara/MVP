@@ -1,10 +1,12 @@
-console.log("blalalb");
+console.log("functions.js carregado");
 
 $(document).ready(function() {
 
+	console.log("hello");
+
 	$(".btn-start").click(function(){
 		window.location.href = "info.html";
-		console.log("blalaasfdsaads11lb");
+		console.log("cliquei no start");
 	});
 
 	$("#btn-next-1").click(function(){
@@ -17,7 +19,7 @@ $(document).ready(function() {
 		href += "&p-min=" + p_min;
 		href += "&p-max=" + p_max;
 
-		href += "&sexo=\"" + $('input[name=sexo]:checked', '#radioForm').val() + "\"";
+		href += "&sexo=" + $('input[name=sexo]:checked', '#radioForm').val();
 
 		window.location.href = href;
 		console.log("estou em perguntas");
@@ -35,10 +37,9 @@ $(document).ready(function() {
 		console.log("estou em presentes");
 	});
 
-
 	$("#preco").slider({
 		tooltip: 'always'
-	});
+	}); 
 
 	/*
 	$("nav a").click(function(){

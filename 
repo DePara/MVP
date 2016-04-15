@@ -1,0 +1,33 @@
+terceira page
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   css/bootstrap-slider.min.css
+#	new file:   css/bootstrap.css
+#	new file:   css/styles.css
+#	new file:   img/1881614-pokemon_pikachu_kanto.png
+#	new file:   img/Emboss-Square-On-Polycarbonate-Chocolate-Bar-Mold.jpg
+#	new file:   img/yellow_duck_cute_animal_face_design_square_sticker-rddc7957de2dd4e91b70585a91515c898_v9wf3_8byvr_324.jpg
+#	new file:   js/bootstrap-slider.min.js
+#	new file:   js/functions.js
+#	new file:   js/jquery-1.12.1.min.js
+#
+# Changes not staged for commit:
+#	deleted:    bootstrap-slider.min.css
+#	deleted:    bootstrap-slider.min.js
+#	deleted:    bootstrap.css
+#	deleted:    functions.js
+#	modified:   index.html
+#	modified:   info.html
+#	deleted:    jquery-1.12.1.min.js
+#	modified:   perguntas.html
+#	modified:   presentes.html
+#	deleted:    styles.css
+#
+# Untracked files:
+#	"\357\200\272"
+#

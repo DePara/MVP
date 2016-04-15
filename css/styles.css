@@ -1,13 +1,14 @@
 h1 {
     font-family: "Georgia", Serif;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     text-align: center;
 }
 
 img {
-    max-width: 80%;
-    margin: 10px;
+    max-width: 60%;
+    max-height: 60%;
+    margin: 5px;
 }
 
 /* Removing horizontal scroll */
@@ -17,10 +18,16 @@ body {
     overflow-y: scroll;
 }
 
-.greenBorder {
-  border: 1px solid green;
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+/* footer */
 .ft{
   padding: 20px;
   background-color: lime;
@@ -28,8 +35,18 @@ body {
   position: relative;
 }
 
-.ft-col{
+/* produto */
+
+.produto {
+  display: table;
+  margin: 0 auto;
+  text-align: center;  
 }
+
+.produtos {
+  width: 100%;
+}
+
 
 /* Slider */
 
@@ -45,6 +62,8 @@ body {
   position: relative; 
   overflow: hidden;
   background-color: blue;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* seta posição */
