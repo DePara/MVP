@@ -1,4 +1,3 @@
-terceira page
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
@@ -6,28 +5,45 @@ terceira page
 # Your branch is up-to-date with 'origin/master'.
 #
 # Changes to be committed:
-#	new file:   css/bootstrap-slider.min.css
-#	new file:   css/bootstrap.css
-#	new file:   css/styles.css
-#	new file:   img/1881614-pokemon_pikachu_kanto.png
-#	new file:   img/Emboss-Square-On-Polycarbonate-Chocolate-Bar-Mold.jpg
-#	new file:   img/yellow_duck_cute_animal_face_design_square_sticker-rddc7957de2dd4e91b70585a91515c898_v9wf3_8byvr_324.jpg
-#	new file:   js/bootstrap-slider.min.js
-#	new file:   js/functions.js
-#	new file:   js/jquery-1.12.1.min.js
-#
-# Changes not staged for commit:
-#	deleted:    bootstrap-slider.min.css
-#	deleted:    bootstrap-slider.min.js
-#	deleted:    bootstrap.css
-#	deleted:    functions.js
+#	modified:   css/styles.css
+#	renamed:    img/Emboss-Square-On-Polycarbonate-Chocolate-Bar-Mold.jpg -> img/chocolate.jpg
+#	renamed:    img/yellow_duck_cute_animal_face_design_square_sticker-rddc7957de2dd4e91b70585a91515c898_v9wf3_8byvr_324.jpg -> img/pato.jpg
+#	renamed:    img/1881614-pokemon_pikachu_kanto.png -> img/pikachu.png
 #	modified:   index.html
-#	modified:   info.html
-#	deleted:    jquery-1.12.1.min.js
+#	modified:   js/functions.js
+#	new file:   js/functions2.js
+#	new file:   js/produtos.js
 #	modified:   perguntas.html
 #	modified:   presentes.html
-#	deleted:    styles.css
-#
-# Untracked files:
-#	"\357\200\272"
+#	new file:   sweetalert2/.editorconfig
+#	new file:   sweetalert2/.gitignore
+#	new file:   sweetalert2/.jscs.json
+#	new file:   sweetalert2/.jshintrc
+#	new file:   sweetalert2/.scss-lint.yml
+#	new file:   sweetalert2/.travis.yml
+#	new file:   sweetalert2/LICENSE
+#	new file:   sweetalert2/README.md
+#	new file:   sweetalert2/bower.json
+#	new file:   sweetalert2/dist/sweetalert2.css
+#	new file:   sweetalert2/dist/sweetalert2.min.css
+#	new file:   sweetalert2/dist/sweetalert2.min.js
+#	new file:   sweetalert2/example/buttons.css
+#	new file:   sweetalert2/example/example.css
+#	new file:   sweetalert2/example/example.scss
+#	new file:   sweetalert2/example/favicon.ico
+#	new file:   sweetalert2/example/gulpfile.js
+#	new file:   sweetalert2/example/index.html
+#	new file:   sweetalert2/gulpfile.js
+#	new file:   sweetalert2/images/swal2-error.png
+#	new file:   sweetalert2/images/swal2-info.png
+#	new file:   sweetalert2/images/swal2-question.png
+#	new file:   sweetalert2/images/swal2-success.png
+#	new file:   sweetalert2/images/swal2-warning.png
+#	new file:   sweetalert2/images/vs_icon.png
+#	new file:   sweetalert2/images/vs_icon@2x.png
+#	new file:   sweetalert2/package.json
+#	new file:   sweetalert2/src/sweetalert2.js
+#	new file:   sweetalert2/src/sweetalert2.scss
+#	new file:   sweetalert2/sweetalert2.gif
+#	new file:   "\357\200\272"
 #

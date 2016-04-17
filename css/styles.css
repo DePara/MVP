@@ -106,6 +106,14 @@ a:link {
   font-size: 30px;
 }
 
+/* input no final */
+
+.inp {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
 /* NAV BAR STUFF */
 
 .navbar {
