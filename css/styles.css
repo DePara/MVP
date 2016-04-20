@@ -27,12 +27,34 @@ a:link {
   text-decoration: none;
 }
 
+/* logo */
+#logo {
+  max-width: 40px;
+  max-height: 40px;
+  margin: -5px -5px -5px -5px;
+}
+
+/* btn */
+
+#btn-cadastro {
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+
 /* footer */
 .ft{
-  padding: 20px;
-  background-color: lime;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: #FFA500;
   width: 100%;
   position: relative;
+}
+
+#contato {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* produto */
@@ -61,7 +83,7 @@ a:link {
   width: 100%; 
   position: relative; 
   overflow: hidden;
-  background-color: blue;
+  background-color: white;
   padding-top: 5%;
   padding-bottom: 5%;
 }
