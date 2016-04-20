@@ -34,12 +34,19 @@ $(document).ready(function() {
 	$("#lbl_p2").html(p2[p[1]].title + "<br>R$" + p2[p[1]].price);	
 	$("#lbl_p3").html(p3[p[2]].title + "<br>R$" + p3[p[2]].price);
 
+	function finalizar(id){
+		var pergunta;
+		if (id == 0){
+			pergunta = p1;
+		} else if (id == 1){
+			pergunta = p2;
+		} else if (id == 2){
+			pergunta = p3;
+		}
 
-
-	$("#img_p1").click(function () {
 		swal({
 		  title: 'Ótima escolha!',
-		  html: '<p> Temos certeza que a sua mãe vai amar esse prato, ainda mais com esse precinho camarada que a gente conseguiu para você! Deixe o seu email aqui pra gente poder fazer a sua reserva e você poder tranquilo com a sua Mãe! Se quiser deixa o seu telefone também, assim fica mais fácil pra gente falar com você!</p><br>E-mail: <input class="inp" id="inp_email"><br>Telefone: <input class="inp" id="inp_tel">',
+		  html: pergunta[p[id]].desc + '<br>E-mail: <input class="inp" id="inp_email">',
 		  showCancelButton: true,
 		  closeOnConfirm: false,
 		  allowEscapeKey: false,
@@ -56,6 +63,19 @@ $(document).ready(function() {
 			})
 		  }
 		});
+	}
+
+
+	$("#img_p1").click(function () {
+		finalizar(0);
+	});
+
+	$("#img_p2").click(function () {
+		finalizar(1);
+	});
+
+	$("#img_p3").click(function () {
+		finalizar(2);
 	});
 
 
