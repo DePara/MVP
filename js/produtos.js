@@ -241,7 +241,7 @@ p3[2] = new Array({
 });
 
 // Pergunta 3, Resposta 4
-p3[0] = new Array({
+p3[3] = new Array({
     title: "Carregador Portátil Power Bank",
     url: "p3r4m.jpg",
     price: '79,90',
@@ -259,7 +259,7 @@ p3[0] = new Array({
 });
 
 // Pergunta 3, Resposta 5
-p3[0] = new Array({
+p3[4] = new Array({
     title: "Box Game Of Thrones - 1ª A 5ª Temporada",
     url: "p3r5m.jpg",
     price: '259,90',

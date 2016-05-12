@@ -58,7 +58,7 @@ $(document).ready(function() {
 
 		swal({
 		  title: 'Ótima escolha!',
-		  html: pergunta[p[id]][tipo].desc + '<br>E-mail: <input class="inp" id="inp_email">',
+		  html: "<h2>" + pergunta[p[id]][tipo].desc + "</h2>" /*+ <br>E-mail: <input class="inp" id="inp_email">'*/,
 		  showCancelButton: true,
 		  closeOnConfirm: false,
 		  allowEscapeKey: false,
@@ -78,15 +78,15 @@ $(document).ready(function() {
 	}
 
 
-	$("#img_p1").click(function () {
+	$("#p1").click(function () {
 		finalizar(0);
 	});
 
-	$("#img_p2").click(function () {
+	$("#p2").click(function () {
 		finalizar(1);
 	});
 
-	$("#img_p3").click(function () {
+	$("#p3").click(function () {
 		finalizar(2);
 	});
 
