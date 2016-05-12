@@ -24,15 +24,27 @@ $(document).ready(function() {
 	p[1] = GetURLParameter('p2');
 	p[2] = GetURLParameter('p3');
 
+	var idade = GetURLParameter('idade');
+	var sexo = GetURLParameter('sexo');
+
+	var tipo;
+	if (idade < 12){
+		tipo = 2;
+	} else if (sexo === "M"){
+		tipo = 1;
+	} else {
+		tipo = 0;
+	}
+
 	/* carregando as imagens */
-	$("#img_p1").attr('src', "img/" + p1[p[0]].url);	
-	$("#img_p2").attr('src', "img/" + p2[p[1]].url);	
-	$("#img_p3").attr('src', "img/" + p3[p[2]].url);
+	$("#img_p1").attr('src', "img/" + p1[p[0]][tipo].url);	
+	$("#img_p2").attr('src', "img/" + p2[p[1]][tipo].url);	
+	$("#img_p3").attr('src', "img/" + p3[p[2]][tipo].url);
 
 	/* carregando os nomes */
-	$("#lbl_p1").html(p1[p[0]].title + "<br>R$" + p1[p[0]].price);	
-	$("#lbl_p2").html(p2[p[1]].title + "<br>R$" + p2[p[1]].price);	
-	$("#lbl_p3").html(p3[p[2]].title + "<br>R$" + p3[p[2]].price);
+	$("#lbl_p1").html(p1[p[0]][tipo].title + "<br>R$" + p1[p[0]][tipo].price);	
+	$("#lbl_p2").html(p2[p[1]][tipo].title + "<br>R$" + p2[p[1]][tipo].price);	
+	$("#lbl_p3").html(p3[p[2]][tipo].title + "<br>R$" + p3[p[2]][tipo].price);
 
 	function finalizar(id){
 		var pergunta;
@@ -46,7 +58,7 @@ $(document).ready(function() {
 
 		swal({
 		  title: 'Ótima escolha!',
-		  html: pergunta[p[id]].desc + '<br>E-mail: <input class="inp" id="inp_email">',
+		  html: pergunta[p[id]][tipo].desc + '<br>E-mail: <input class="inp" id="inp_email">',
 		  showCancelButton: true,
 		  closeOnConfirm: false,
 		  allowEscapeKey: false,
