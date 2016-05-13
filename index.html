@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="pt">
 <head>
 	<meta charset="utf-8">
@@ -13,6 +13,7 @@
 	<script src="sweetalert2/dist/sweetalert2.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>	
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<script src="js/functions.js"></script>
 	<script src="js/functions3.js"></script>
 
@@ -23,31 +24,37 @@
 
 <body>
 
-	<!-- NAV BAR -->
-
-	<nav class="navbar navbar-default" role="navigation">
-	  <div class="container-fluid">
-	    <ul class="nav navbar-nav">
-	      <li><a id="btn-home"> <img id="logo" src="img/logo.png"></a></li>
-	    </ul>
-	    <!--
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><button type="button" class="btn btn-default" id="btn-cadastro">Cadastrar-se!</button></li>
-	    </ul>
-	    -->
-	  </div>
-	</nav>
-
 	<!-- CONTEUDO -->
 
-  	<div class="wrapper">
-	    <div class="positioner">
-	    	<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-		        	<button type="button" class="btn btn-default btn-start">Quero dar um presente!</button>
-				</div>
-		    </div>
-	    </div>
+  	<div class="header">
+	<div class="logo">
+		<a id="btn-home"><img id="logo" src="img/logo.png"></a>
+	</div>
+  	<div class="header-txt">
+  		<h1><span>De: <b>você</b> Para: </span>
+  		<em>
+  		<span>Bruno</span>
+  		<span>Ana</span>
+  		<span>Thiago</span>
+  		<span>Dani</span>
+  		</em>
+  		</h1>
+  		<p>A De:Para é um serviço grátis de recomendação de presentes, baseado em algoritmo inteligente de mapeamento.</p>
+		
+		<button type="button" id="component-1"  class="button button--1 btn-start">
+			Quero dar um presente!
+			<span class="button__container">
+				<span class="circle top-left"></span>
+				<span class="circle top-left"></span>
+				<span class="circle top-left"></span>
+				<span class="button__bg"></span>
+				<span class="circle bottom-right"></span>
+				<span class="circle bottom-right"></span>
+				<span class="circle bottom-right"></span>
+			</span>
+		</button>
+  	</div>
+
   	</div>
 
   	<!-- FOOTER -->
@@ -78,6 +85,8 @@
 		</div>
 	</div>		
 
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
