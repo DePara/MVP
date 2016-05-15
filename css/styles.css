@@ -9,7 +9,14 @@ body {
   background: #e9f0f4 linear-gradient(160deg, #d0dbe1 40%, #a6b9c4 80%);
 }
 
+/* pra remover o espacinho feio dos lados */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a:link {text-decoration: none;}
+
 h4 {
   font-weight: 900;
   text-transform: uppercase;
@@ -21,17 +28,33 @@ h4 {
   color: #a80a4b;
 }
 
+.menor {
+  font-size: 20px;
+}
+
 /* header */
-.header {height: 70vh;}
+.header {
+  height: 80%;
+}
+
+.depara {
+  display: inline-block;
+}
+
 .header-bar {
   width: 100%;
   text-align: center;
   margin: 5px auto 30px;
 }
+
+.header-col {
+  padding: 0 10px;
+}
+
 .header-txt {
-  width: 450px;
-  padding-top: 70px;
-  margin-left: 200px;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
   text-align: left;
 }
 .header-txt h1 {
@@ -61,10 +84,12 @@ h4 {
   position: relative;
   top: -2px;
   left: 5px;
+  padding: 0 10px;
 }
 .header-txt h1 > span {
   display: inline-block;
   float: left;
+  overflow: visible;
 }
 .header-txt h1 > em span {
   display: block;
@@ -101,7 +126,7 @@ h4 {
   color: #fff;
   font-family: "Handlee", Cursive;
 }
-.header-txt .btn-start:hover, .btn-next:hover {color: #fff;}
+
 .btn-next {
   width: 100%;
   transition: background .2s linear;
@@ -111,10 +136,20 @@ h4 {
 /* logo */
 .header .logo {
   position: absolute;
-  right: 21%;
+  right: 15%;
   top: 5%;
   width: 320px;
 }
+
+@media screen and (max-width: 1000px) {
+  .header .logo {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    display: none;
+  }
+}
+
 .header-bar .logo {
   width: 200px;
   margin: 0 auto -150px;
@@ -150,6 +185,8 @@ select.form-control{
   vertical-align: middle;
   line-height: 1.8;
 }
+
+
  .slide-label {
   position: absolute;
   top: 50%;
@@ -163,6 +200,26 @@ select.form-control{
   right: -45px;
  }
 .slider-handle {background-image: linear-gradient(to bottom, #ce0c5c 0, #a80a4b 100%) !important;}
+
+/* box */
+.box-bg {
+  width: 350px;
+  margin: 100px auto 50px;
+  padding: 50px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+}
+
+.box-bg-perguntas {
+  width: 450px;
+}
+
+.box-content {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 /* produto */
 .produtos {
@@ -212,28 +269,6 @@ select.form-control{
   text-decoration: none;
 }
 
-/* box */
-.box-bg {
-  width: 350px;
-  margin: 100px auto 50px;
-  padding: 50px;
-  background-color: white;
-  border: 1px solid #e7e7e7;
-  border-radius: 4px;
-}
-.box-bg-perguntas {width: 450px;}
-.box-content {
-  position: relative;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-/* input no final */
-.inp {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
 /* footer */
 .ft{
   width: 100%;
@@ -261,23 +296,7 @@ select.form-control{
   max-width: 20px;  
   max-height: 20px;
 }
-/*
-#frm-cadastro {  
-  overflow: hidden;
-}
-
-#frm-cadastro input { 
-  width: 100%;
-}
-
-#frm-cadastro button {
-  float: right;
-}
-
-#frm-cadastro span {
-  display: block;
-  overflow: hidden;
-} */
+/* Cadastro */
 
 #frm-cadastro{
     overflow: hidden;
@@ -302,23 +321,4 @@ select.form-control{
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-}
-
-
-
-
-
-
-
-
-.menor {
-  font-size: 20px;
-}
-
-.preto {
-  background-color: black;
-}
-
-.verm {
-  background-color: red;
 }

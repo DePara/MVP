@@ -1,7 +1,7 @@
 console.log("functions3.js carregado");
 
 $(document).ready(function() {
-
+    /*
     $("#btn-home").click(function() {
         window.location.href = "index.html";
     });
@@ -23,7 +23,7 @@ $(document).ready(function() {
                 });
             }
         });
-    });
+    });*/
 
     if (!Modernizr.svg) {
         $('img[src*="svg"]').attr('src', function() {

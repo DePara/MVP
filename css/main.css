@@ -1,5 +1,6 @@
 .svg-filters {
-  position: absolute;
+  position: absolute
+;
   visibility: hidden;
   width: 1px;
   height: 1px;
