@@ -18,7 +18,8 @@
 		$sql = "INSERT INTO email_data (email) VALUES ('$email')";
 
 		if ($conn->query($sql)) {
-		    header( "Location: http://www.deparapresentes.com.br" );;
+		    header( "Location: http://www.deparapresentes.com.br" );
+		    echo $email;
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}

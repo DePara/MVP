@@ -55,7 +55,7 @@ $(document).ready(function() {
                 'Obrigado por se cadastrar!',
                 'success'
             ).then(function() {
-            	window.location.href = "../envio.php&email=" + email;
+            	window.location.href = "../envio.php?email=" + email;
             });
 		} else {
 			swal(
