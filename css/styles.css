@@ -8,6 +8,7 @@ body {
   font-size: 10px;
   background: #e9f0f4 linear-gradient(160deg, #d0dbe1 40%, #a6b9c4 80%);
 }
+
 a:link {text-decoration: none;}
 h4 {
   font-weight: 900;
@@ -29,7 +30,7 @@ h4 {
 }
 .header-txt {
   width: 450px;
-  padding-top: 100px;
+  padding-top: 70px;
   margin-left: 200px;
   text-align: left;
 }
@@ -84,12 +85,12 @@ h4 {
   68%,80%  {transform:translateY(-50%);}
   85%,97%  {transform:translateY(-25%);}
 }
-.header-txt p {
-  font-size: 2.5em;
+.header-txt .frase{
+  font-size: 2.7em;
   color: #555;
-  margin-bottom: 30px
+  margin-bottom: 1em;
 }
-.header-txt button, .btn-next {
+.header-txt .btn-start, .btn-next {
   border-radius: 6px;
   padding: 15px 40px;
   background-color: #ce0c5c;
@@ -100,7 +101,7 @@ h4 {
   color: #fff;
   font-family: "Handlee", Cursive;
 }
-.header-txt button:hover, .btn-next:hover {color: #fff;}
+.header-txt .btn-start:hover, .btn-next:hover {color: #fff;}
 .btn-next {
   width: 100%;
   transition: background .2s linear;
@@ -259,4 +260,65 @@ select.form-control{
 .social-icon {
   max-width: 20px;  
   max-height: 20px;
+}
+/*
+#frm-cadastro {  
+  overflow: hidden;
+}
+
+#frm-cadastro input { 
+  width: 100%;
+}
+
+#frm-cadastro button {
+  float: right;
+}
+
+#frm-cadastro span {
+  display: block;
+  overflow: hidden;
+} */
+
+#frm-cadastro{
+    overflow: hidden;
+    font-size: 1.7em;
+}
+#frm-cadastro input {
+    width: 100%
+}
+#frm-cadastro span {
+    display: block;
+    overflow: hidden;
+}
+#frm-cadastro button {
+    float: right;
+}
+
+#frm-cadastro input, #frm-cadastro button {
+  font-size: inherit;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-bottom: 1em;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+
+
+
+
+
+
+
+.menor {
+  font-size: 20px;
+}
+
+.preto {
+  background-color: black;
+}
+
+.verm {
+  background-color: red;
 }

@@ -1,5 +1,10 @@
 console.log("functions.js carregado");
 
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
 $(document).ready(function() {
 
 	console.log("hello");
@@ -40,6 +45,29 @@ $(document).ready(function() {
 	$("#preco").slider({
 		tooltip: 'always'
 	}); 
+
+	$( "#cadastro" ).click(function() {
+		var email = $("#usr_email").val();
+		console.log(email);
+		if (isEmail(email)){
+			swal(
+                'Cadastro confirmado',
+                'Obrigado por se cadastrar!',
+                'success'
+            ).then(function() {
+            	window.location.href = "../envio.php&email=" + email;
+            });
+		} else {
+			swal(
+				'Erro',
+		      	'E-mail inválido',
+		      	'error'
+		    );
+		    $("#usr_email").val("");
+		}
+	});
+
+
 
 	/*
 	$("nav a").click(function(){
